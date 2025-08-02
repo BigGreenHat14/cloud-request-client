@@ -1,4 +1,4 @@
-__all__ = ["cloud_requests"]
+__all__ = ["cloud_request"]
 
 import re
 from typing import Optional, Any, Set, List
@@ -165,3 +165,4 @@ def cloud_request(cloud,name,args=[]):
     id = str(randint(10001,99999))
     send(cloud,name,args,id=id)
     return receive(cloud,id)
+
